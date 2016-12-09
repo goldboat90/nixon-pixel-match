@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: none repeat scroll 0 0 white;
+    color: #1e1e1e;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .25px;
+    line-height: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+.main-wrapper {
+    position: relative;
+    transition: .3s -webkit-transform cubic-bezier(0.55,0,0.1,1);
+    transition: .3s transform cubic-bezier(0.55,0,0.1,1);
+    background: none repeat scroll 0 0 white;
+}
+.mobile-nav-wrapper {
+    border-bottom: 1px solid #d1d4d6;
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+.mobile-toggle-left {
+    vertical-align: top;
+    box-sizing: border-box;
+    display: inline-block;
+    float: none;
+    margin-right: -0.31em;
+    width: 25%;
+    margin-left: 0;
+    height: 60px;
+}
+.mobile-toggle-link {
+
+}
+.mobile-hamburger-toggle-link {
+}
+.mobile-hamburger-icon {
+    width: 48px;
+    height: 45px;
+    position: absolute;
+    margin: 0 auto;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    tranform: rotate(0);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    -webkit-transform: scale(0.34);
+    transform: scale(0.34);
+    left: 5px;
+    top: -17px;
+}
+.mobile-hamburger-icon span {
+    background: #333;
+    display: block;
+    height: 5px;
+    opacity: 1;
+    position: absolute;
+    width: 50%;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    tranform: rotate(0);
+    transition: .25s ease-in-out;
+    transition-delay: .25s;
+}
+.mobile-search {
+    padding-left: 7px;
+    opacity: 1;
+    left: 0;
+    transition: .35s ease-in-out;
+}
+.nixon-logo-mobile {
+    height: 120px;
+}
+.nixon-logo-img {
+    width: 163px;
+}
+
+/***************************************************/
+/***************************************************/
+/********     Mobile Media (600px) View     ********/
+/***************************************************/
+/***************************************************/
+
+@media screen and (max-width: 600px) {
+    .mobile-hamburger-toggle-link {
+        height: 60px;
+        line-height: 60px;
+        padding-left: 20px;
+        padding-right: 29px;
+        position: relative;
+    }
+    .mobile-hamburger-toggle-link, .mobile-search {
+        height: 60px;
+        line-height: 60px;
+        padding-left: 20px;
+        padding-right: 29px;
+        position: relative;
+    }
+    .mobile-hamburger-toggle-link {
+        line-height: 60px;
+        font-size: 18.5px;
+    }
+    .nixon-logo-mobile {
+        height: 60px;
+    }
+    .nixon-logo-img {
+        width: 85px;
+    }
+}
